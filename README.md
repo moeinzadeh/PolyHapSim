@@ -1,7 +1,7 @@
 # PolyHapSim: A haplotype simulator for polyploid genomes
 
 PolyHapSim takes genome length, heterozygousity rates, ploidy levels, and set of illumina library insert sizes and their coverage to simulate haplotypes and Illumina reads for evaluation.
-It takes paths to installed Ranbow, H-PoP, SDhaP, HapCompass tools in order to evaluates them. 
+It takes paths to installed Ranbow, H-PoP, SDhaP, HapCompass tools in order to evaluate them. 
 
 ### Set parameters in `main.py`
 
