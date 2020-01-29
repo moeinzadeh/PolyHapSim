@@ -12,5 +12,3 @@ export SDHAP=PATHTO/hap
 export RANBOW=PATHTO/ranbow.py
 export SAMPLE_FASTA=PATHTO/sample.fasta
 
-# check if we are being sourced by another script or shell
-
