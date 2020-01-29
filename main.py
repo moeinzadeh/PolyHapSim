@@ -1,5 +1,5 @@
-result_folder = '/project/moeinzadeh-data/tmp'
-scriptFolder = '/project/moeinzadeh-data/project/polyploid_haplotyping/script_github_main'
+result_folder = 'pathto???'
+scriptFolder = 'pathto???'
 genomelen = '100000'
 timeout_each_method = '10000'
 runTimeOnCluster = '20h'
