@@ -43,6 +43,5 @@ export SAMPLE_FASTA=PATHTO/sample.fasta
 ```
 
 
-Contributors: 
-Eugene Muzychenko (github id: emuzychenko)
-M-Hossein Moeinzadeh (github id: moeinzadeh)
+Other contributors to this project:   
+Eugene Muzychenko (github id: emuzychenko)  
