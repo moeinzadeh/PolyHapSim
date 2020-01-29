@@ -1,11 +1,13 @@
-# PolyPapSim
-Haplotype simulator for polyploid genomes
+# PolyHapSim: A haplotype simulator for polyploid genomes
 
-### Set the parameters in main.py file
+PolyHapSim takes genome length, heterozygousity rates, ploidy levels, and set of illumina library insert sizes and their coverage to simulate haplotypes and Illumina reads for evaluation.
+It takes paths to installed Ranbow, H-PoP, SDhaP, HapCompass tools in order to evaluates them. 
+
+### Set parameters in `main.py`
 
 ```
-result_folder = 'pathto???'
-scriptFolder = 'pathto???'
+result_folder = '/project/moeinzadeh-data/tmp'
+scriptFolder = '/project/moeinzadeh-data/project/polyploid_haplotyping/script_github_main'
 genomelen = '100000'
 timeout_each_method = '10000'
 runTimeOnCluster = '20h'
@@ -16,10 +18,11 @@ coverage = '30'
 multiple_inserts=""
 for insert in [('350','50',coverage),('500','100',coverage),('1000','200',coverage),('2000','400',coverage),('5000','500',coverage)]:
     multiple_inserts+=insert[0]+"_"+insert[1]+"_"+insert[2]+"-"
-errors =  ['0.001','0.005','0.01','0.05','0.1']
+heterozygousity_rates =  ['0.001','0.005','0.01','0.05','0.1']
+ploidies = range(4,9,2)
 ```
 
-### Set the env variables in `set_env_variables.sh` file
+### Set env variables in `set_env_variables.sh`
 ```
 
 #!/usr/bin/env bash 
@@ -38,3 +41,8 @@ export SAMPLE_FASTA=PATHTO/sample.fasta
 
 
 ```
+
+
+Contributors: 
+Eugene Muzychenko (github id: emuzychenko)
+M-Hossein Moeinzadeh (github id: moeinzadeh)
