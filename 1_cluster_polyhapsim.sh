@@ -21,15 +21,6 @@ stdOut=${working_dir_result}"/"$id".out"
 stdErr=${working_dir_result}"/"$id".err"
 
 
-mxqsub \
-   --workdir=${working_dir_result} \
-   --stdout=${stdOut} \
-   --stderr=${stdErr} \
-   --runtime=${runTimeOnCluster} \
-   --threads=1 \
-   --memory=${memoryOnCluster} \
-   --group-id=$groupID\
-   bash ${scriptFolder}/2_run_polyhapsim.sh ${working_dir_haploEvgeny} ${genomeLen} ${error} ${multipleInserts} ${timeout} ${replicate} ${working_dir_result} ${grpidentifier} ${ploidy} ${scriptFolder}
 
-#bash ${scriptFolder}/2_run_polyhapsim.sh ${working_dir_haploEvgeny} ${genomeLen} ${error} ${multipleInserts} ${timeout} ${replicate} ${working_dir_result} ${grpidentifier} ${ploidy} ${scriptFolder}
+bash ${scriptFolder}/2_run_polyhapsim.sh ${working_dir_haploEvgeny} ${genomeLen} ${error} ${multipleInserts} ${timeout} ${replicate} ${working_dir_result} ${grpidentifier} ${ploidy} ${scriptFolder}
 
