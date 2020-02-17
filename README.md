@@ -1,7 +1,7 @@
 # PolyHapSim: A haplotype simulator for polyploid genomes
 
 PolyHapSim takes genome length, heterozygousity rates, ploidy levels, and set of illumina library insert sizes and their coverage to simulate haplotypes and Illumina reads for evaluation.
-It takes paths to installed Ranbow, H-PoP, SDhaP, HapCompass tools in order to evaluates them.
+It takes paths to installed Ranbow, H-PoP, SDhaP, HapCompass tools in order to evaluate them. 
 
 ### Set parameters in `main.py`
 
@@ -25,7 +25,7 @@ ploidies = range(4,9,2)
 ### Set env variables in `set_env_variables.sh`
 ```
 
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
 export FAINX=PATHTO/faidx
 export HAPLOGENERATOR=PATHTO/haplogenerator.py
 export MINIMAP2=PATHTO/minimap2
@@ -43,5 +43,5 @@ export SAMPLE_FASTA=PATHTO/sample.fasta
 ```
 
 
-Other contributors to this project:
-Eugene Muzychenko (github id: emuzychenko)
+Other contributors to this project:   
+Eugene Muzychenko (github id: emuzychenko)  
